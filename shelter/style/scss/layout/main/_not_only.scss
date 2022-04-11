@@ -1,0 +1,48 @@
+.not_only{
+    
+    background: url(../../../assets/icons/noise_transparent@2x.png),linear-gradient(315deg, #262425 30%, #5B483A 100%), #211F20;
+    overflow: hidden;
+    .not_only-container{
+        padding: 60px 40px 243px 40px;
+    }
+    .not_only-block {
+        margin-top: 284px;
+        max-width: 460px;
+        z-index: 20;
+        :not(:first-child){
+            margin-top: 42px;
+        }
+        .not_only-block-title {
+            font-size: 44px;
+            line-height: 130%;
+            color: $color-light-xl;
+            font-weight: 400;
+        }
+        .not_only-block-content {
+            font-family: Arial, sans-serif;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 160%;
+            color: #CDCDCD;
+        }
+        .not_only-block--button {
+            @extend %button;
+            background: $color-primary;
+            transition: 0.3s background-color;
+            letter-spacing: 0.06em;
+            &:hover{
+                background-color: $color-primary-light;
+            }
+        }
+    
+    }
+    .not_only-img{
+        display: block;
+        position: absolute;
+        bottom: 0;
+        right: 40px;
+        z-index: 0;
+    }
+}
+
+

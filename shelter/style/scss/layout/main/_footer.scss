@@ -1,0 +1,91 @@
+.footer {
+    padding-top: 28px;
+    background: url(../../../assets/icons/noise_transparent@2x.png),linear-gradient(315deg, #262425 30%, #5B483A 100%), #211F20;
+    .container {
+        display: flex;
+        justify-content: space-between;
+        .footer-img{
+            margin-top: 12px;
+        }
+        .footer-block {
+            display: flex;
+            flex-direction: column;
+            :not(:first-child){
+                margin-top: 40px;
+            }
+            &:nth-child(2) .footer-block-title{
+                margin-left: -6px;
+            }
+            .footer-block-title {
+                color: $color-light-xl;
+                font-size: 35px;
+                line-height: 45.5px;
+                font-weight: 400;
+                margin-bottom: 0;
+                letter-spacing: 0.06em;
+
+            }
+            .footer-block-link {
+                position: relative;
+                text-decoration: none;
+                display: block;
+                font-size: 20px;
+                line-height: 23px;
+                color: $color-primary;
+                letter-spacing: 0.06em;
+                &:before{
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
+            }
+            .link-email{
+                padding-left: 60px;
+                margin-top: 42px;
+                &:before{
+                    content: "";
+                    background: url(../../../../assets/icons/footer/mail.png) no-repeat;
+                    width: 40px;
+                    height: 26px;
+                }
+            }
+            .link-phone{
+                margin-top: 50px;
+                padding-left: 60px;
+                &:before{
+                    content: "";
+                    top: -4px;
+                    background: url(../../../../assets/icons/footer/phone.png) no-repeat;
+                    width: 40px;
+                    height: 32px;
+                }
+            }
+            .link-location{
+                margin-top: 32px;
+                padding-left: 36px;
+                &:before{
+                    content: "";
+                    background: url(../../../../assets/icons/footer/pin.png) no-repeat;
+                    width: 22px;
+                    height: 32px;
+                    top: 6px;
+                    left: -6px;
+                }
+            }
+            .link-adress{
+                margin-top: 37px;
+                padding-left: 36px;
+                &:before{
+                    content: "";
+                    background: url(../../../../assets/icons/footer/pin.png) no-repeat;
+                    width: 22px;
+                    height: 32px;
+                    top: -5px;
+                    left: -6px;
+                }
+            }
+        }
+    }
+}
+
